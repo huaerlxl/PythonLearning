@@ -120,3 +120,91 @@ print("3:9:2",numbers[3:9:2])
 3. 输出成绩的最高分，最低分，平均分
 4. 提取grades最高分前三名
 
+```python
+grades = [77,88,73,99,82,89,95,86,93]
+grades.sort(reverse=True)
+print(f"最高分：{max(grades)}")
+print(f"最低分：{min(grades)}")
+print(f"平均分{sum(grades) / len(grades)}")
+print("前三名的成绩是")
+for grade in grades[:3]:
+    print(grade)
+print(f"第一名{grades[0]}")
+print(f"第二名{grades[1]}")
+print(f"第三名{grades[2]}")
+```
+
+## 元组Tuple
+
+- 元组是一种类似列表的数据序列类型
+
+- 不可变、不可添加、删除、更新元素
+
+- 支持索引、切片、遍历
+
+- 用两个小括号包括，元素之间用逗号分隔
+
+  
+
+创建方式：
+
+```python
+student = (101，'xiaoming',20)
+#元祖的括号可以省略
+tup = "a","b","c"
+
+
+```
+
+创建空元祖和单个元素元祖的方式：
+
+```
+tup = ()
+tup = (50,)
+```
+
+索引和切片
+
+```
+#得到单个元素
+tup[idx]
+#得到切片，类型也是元祖
+tup[start,stop,step]
+```
+
+| 区别     | 元祖tuple      | 列表list       | 说明                                                         |
+| -------- | -------------- | -------------- | ------------------------------------------------------------ |
+| 内容区别 | 异质、不同类型 | 同质、相同类型 | 用一个元祖表示一个人的信息people(id,name,age); 用list来表示很多人的信息列表[p1,p2,p3] |
+| 使用区别 | 更多用于拆包   | 循环遍历       | 元祖pack和unpack： id,name,age=1001,'xiaoming',20 ; 列表循环遍历： for s in students : print(s) |
+| 是否可变 | 不可           | 可变           | 元祖的不可变性质： 代码更安全，如果是一个元祖就放心使用，不怕被更改；有些场景需要不可变的列表，比如字典的key要求不可变对象 |
+
+## 元组练习题
+
+- 新建一个元组，叫student，信息有：学号，姓名，年龄，身高，内容有(1001，'xiaoming',20,176)
+
+- 使用for循环，遍历student的各个元素
+
+- 使用变量拆包的方式，得到学号、姓名、年龄、身高多个变量，打印结果
+
+- 修改姓名元素，变成daming，会发现报错不允许修改
+
+- 只能整体修改student，例如设置新的学生信息(1002,'xiaobai',21,173)
+
+  
+
+```python
+student = (1001,'xiaoming',20,176)
+print(student,type(student))
+
+for x in student:
+    print(x)
+
+学号,姓名,年龄,身高 = student
+print("学号:",学号)
+print("姓名:",姓名)
+print("年龄:",年龄)
+print("身高:",身高)
+
+student = (1002,'xiaobai',21,173)
+```
+
