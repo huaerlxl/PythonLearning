@@ -81,7 +81,7 @@ numbers = [i * i for i in range(1,101) if i % 2 ==0]
 
 ```
 
-![image-20250512215753539](.\imgs\列表推导式.png)
+![列表推导式](.\imgs\列表推导式.png)
 
 ## 列表的切片
 
