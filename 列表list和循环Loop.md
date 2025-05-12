@@ -81,7 +81,7 @@ numbers = [i * i for i in range(1,101) if i % 2 ==0]
 
 ```
 
-![列表推导式](.\imgs\列表推导式.png)
+![列表推导式](https://github.com/huaerlxl/PythonLearning/blob/main/imgs/列表推导式.png)
 
 ## 列表的切片
 
