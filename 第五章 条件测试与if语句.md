@@ -123,7 +123,7 @@ a == 3 or "pear" not in fruits or value == "ok"		#or要求，任何一个条件�
 
 and 和 or可以混用，and的优先级更高(限制性and再执行or)
 
-![条件测试](.\imgs\条件测试.png)
+![条件测试](https://github.com/huaerlxl/PythonLearning/blob/main/imgs/条件测试.png)
 
 ## 条件测试练习题
 
